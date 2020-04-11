@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+    <script src="calculator.js"></script>
+	</head>
+	<body>
+	    <form name = "input">
+	        <input id = "topTextBox" type= "text" onkeypress = "checkEnterThenEval(this)">
+	    </form>
+	    <table>
+	        <tr>
+	            <td> <button onclick = "addText('7')">7</button></td>
+	            <td> <button onclick = "addText('8')">8</button></td>
+	            <td> <button onclick = "addText('9')">9</button></td>
+	            <td> <button onclick = "addText('/')">/</button></td>
+	            <td> <button onclick = "clearCalc()">C</button></td>
+	        </tr>
+	        <tr>
+	            <td> <button onclick = "addText('4')">4</button></td>
+	            <td> <button onclick = "addText('5')">5</button></td>
+	            <td> <button onclick = "addText('6')">6</button></td>
+	            <td> <button onclick = "addText('*')">*</button></td>
+	            <td> <button onclick = "backspace()">del</button></td>
+	        </tr>
+	        <tr>
+	            <td> <button onclick = "addText('1')">1</button></td>
+	            <td> <button onclick = "addText('2')">2</button></td>
+	            <td> <button onclick = "addText('3')">3</button></td>
+	            <td> <button onclick = "addText('-')">-</button></td>
+	            <td rowspan = 2> <button id = "EnterButton" style="height:102px" onclick="evaluateCalc()">=</button></td>
+	        </tr>
+	        <tr>
+	            <td> <button onclick = "addText('.')">.</button></td>
+	            <td> <button onclick = "addText('0')">0</button></td>
+	            <td> <button onclick = "addText('(-1)*')">(-)</button></td>
+	            <td> <button onclick = "addText('+')">+</button></td>
+	        </tr>
+	    </table>
+	</body>
+</html>

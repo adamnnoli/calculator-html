@@ -1,0 +1,17 @@
+table {
+  margin: auto;
+
+}
+button {
+  height:50px;
+  width:50px;
+}
+input {
+  height:50px;
+  width: 263px;
+  margin-left: 627px;
+  margin-top: 250px;
+}
+body {
+  background-color:#f2ff82
+}
